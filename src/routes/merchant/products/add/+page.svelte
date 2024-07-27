@@ -1,7 +1,7 @@
 <script>
   export let data;
-  const msg = data.msg
-  console.log("msg: " + msg);
+  // const msg = data.msg
+  // console.log("msg: " + msg);
 
   // /**
   //  * @typedef {Object} Product
