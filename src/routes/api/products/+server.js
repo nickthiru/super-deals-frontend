@@ -1,7 +1,10 @@
 import { json } from "@sveltejs/kit";
 
 export async function GET() {
-  return json(7);
+  console.log("Inside /api/products/+server.js GET");
+
+  const number = 7;
+  return json(number);
 }
 
 export async function PUT({ request }) {
