@@ -1,9 +1,8 @@
 <script>
-  export let style = "";
 </script>
 
 
-<button class={"default " + style}>
+<button class={"default " + $$restProps.class}>
   <slot />
 </button>
 
