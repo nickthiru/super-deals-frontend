@@ -1,1 +1,1 @@
-Components in the UI Kit (inside $lib/components) may have different variations e.g. different type of buttons. To choose a variation, pass in the variation's class names via the "style" prop.
+Components in the UI Kit (inside $lib/components) may have different variations e.g. different type of buttons. To choose a variation, pass in the variation's class names via the "style" prop. Class names should be passed as a string, with each class name separated by a space. Do not include the customary "." (dot) at the start of the class name.
