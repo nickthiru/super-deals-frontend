@@ -8,8 +8,10 @@ Bounded context: Catalog
 Data:
 
   AddProductFormDetails = {
-    id: string, 
-    name: string,
+    merchantId: string,
+    merchantName: string,
+    productId: string, 
+    productName: string,
     description: string,
     category: "fashion" | "pharmacy" | "appliances",
     price: number,
