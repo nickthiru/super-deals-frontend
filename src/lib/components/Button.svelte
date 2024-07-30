@@ -2,13 +2,13 @@
 </script>
 
 
-<button class={"default " + $$restProps.class}>
+<button class={$$restProps.class}>
   <slot />
 </button>
 
 
 <style>
-  .default {
+  button {
     border-radius: 3px;
     display: inline-block;
     cursor: pointer;
