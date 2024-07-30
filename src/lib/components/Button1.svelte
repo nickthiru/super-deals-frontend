@@ -1,16 +1,15 @@
 <script>
   export let style = "";
-  const classes = "base " + style;
 </script>
 
 
-<button class={classes}>
+<button class={style}>
   <slot />
 </button>
 
 
 <style>
-  .base {
+  button {
     border-radius: 3px;
     display: inline-block;
     cursor: pointer;

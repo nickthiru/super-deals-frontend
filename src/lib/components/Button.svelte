@@ -3,13 +3,13 @@
 </script>
 
 
-<button class={style}>
+<button class={"default " + style}>
   <slot />
 </button>
 
 
 <style>
-  button {
+  .default {
     border-radius: 3px;
     display: inline-block;
     cursor: pointer;
