@@ -2,7 +2,7 @@
 @import "open-props/normalize.min.css";
 /* @import "open-props/normalize.dark.min.css"; */
 
-/*** BASE ***/
+/*** Base Styles ***/
 
 :root {
   /* Colors */
@@ -67,19 +67,3 @@ h6 {
 #__next {
   isolation: isolate;
 }
-
-/*** DEFAULTS ***/
-
-/* a {
-  color: var(--anchor-color);
-  opacity: 0.85;
-  transition: opacity 200ms;
-}
-
-a:hover {
-  opacity: 1;
-}
-
-p {
-  color: var(--gray-light);
-} */
