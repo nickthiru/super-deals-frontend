@@ -1,5 +1,5 @@
 <script>
-  export let data;
+  // export let data;
   // const msg = data.msg
   // console.log("msg: " + msg);
 
