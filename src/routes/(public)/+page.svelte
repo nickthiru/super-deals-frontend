@@ -3,7 +3,7 @@
   // import Button from "$lib/components/Button.svelte";
 </script>
 
-<Container>
+<Container class="container--app">
   <h1>Welcome to the Landing Page</h1>
 </Container>
 
