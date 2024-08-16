@@ -1,5 +1,5 @@
 @import "open-props/postcss/style";
-@import "open-props/normalize.min.css";
+/* @import "open-props/normalize.min.css"; */
 /* @import "open-props/normalize.dark.min.css"; */
 
 /*** Base Styles ***/
@@ -25,6 +25,7 @@
 html,
 body {
   height: 100%;
+  background-color: var(--blue-0);
 }
 
 /* Typographic tweaks */
@@ -66,4 +67,11 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Make components like buttons and text fields easily clickable by finger i.e. coarse pointer */
+@media (pointer: coarse) {
+  html {
+    --min-tap-height: 44px;
+  }
 }

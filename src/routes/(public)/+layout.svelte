@@ -1,12 +1,8 @@
-<nav>
-  <p>Nav Bar</p>
-</nav>
+<script>
+  import NavBar from "$lib/components/common/NavBar.svelte";
+</script>
+
 
 <slot />
 
-
-<style>
-  nav {
-    height: 50px;
-  }
-</style>
+<NavBar />

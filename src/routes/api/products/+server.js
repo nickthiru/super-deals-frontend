@@ -1,4 +1,4 @@
-import { json } from "@sveltejs/kit";
+import { json, text } from "@sveltejs/kit";
 import { products } from "$lib/data/products.js";
 
 export async function GET() {
@@ -14,4 +14,13 @@ export async function PUT({ request }) {
   const obj = await request.json();
   console.log("obj: " + JSON.stringify(obj, null, 2));
   return json(obj);
+}
+
+/**
+ * Exporting the fallback handler will match any unhandled request methods, including methods like 
+ * MOVE which have no dedicated export from +server.js.
+ * @type {import('./$types').RequestHandler}  
+ */
+export async function fallback({ request }) {
+  return text(`I caught your ${request.method} request!`);
 }
