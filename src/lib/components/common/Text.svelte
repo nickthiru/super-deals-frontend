@@ -12,7 +12,7 @@
 p {
   font-family: var(--font-rounded-sans);
   font-size: 1rem;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 150%;
   letter-spacing: 0px;
 }
@@ -25,6 +25,10 @@ p {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 100%;
+}
+
+.sm {
+  font-size: 0.85rem;
 }
 
 </style>

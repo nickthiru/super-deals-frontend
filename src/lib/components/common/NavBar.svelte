@@ -1,13 +1,22 @@
 <script>
   import Link from "./Link.svelte";
+  import Text from "./Text.svelte";
 </script>
 
 
 <nav>
-  <Link type="nav">Home</Link>
-  <Link type="nav">Brands</Link>
-  <Link type="nav">Editor's Choice</Link>
-  <Link type="nav">Settings</Link>
+  <Link type="nav">
+    <Text type="sm">Home</Text>
+  </Link>
+  <Link type="nav">
+    <Text type="sm">Brands</Text>
+  </Link>
+  <Link type="nav">
+    <Text type="sm">Editor's Choice</Text>
+  </Link>
+  <Link type="nav">
+    <Text type="sm">Settings</Text>
+  </Link>
 </nav>
 
 

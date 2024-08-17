@@ -5,5 +5,6 @@
   "cssvar.ignore": [],
 
   // add support for autocomplete in JS or JS like files
-  "cssvar.extensions": ["css", "postcss"]
+  "cssvar.extensions": ["css", "postcss"],
+  "liveServer.settings.port": 5501
 }
