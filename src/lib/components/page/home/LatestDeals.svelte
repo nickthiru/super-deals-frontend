@@ -1,6 +1,9 @@
 <script>
-  import Container from "$lib/components/common/Container.svelte";
+  import Card from "$lib/components/common/Card.svelte";
+  import Text from "$lib/components/common/Text.svelte";
 </script>
 
 
-<Container type="border">Latest Deals</Container>
+<Card type="border" style="grid-area: latest-deals">
+  <Text>Latest Deals</Text>
+</Card>

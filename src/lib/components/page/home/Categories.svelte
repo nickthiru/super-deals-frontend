@@ -1,6 +1,13 @@
 <script>
-  import Container from "$lib/components/common/Container.svelte";
+  import Card from "$lib/components/common/Card.svelte";
+  import Text from "$lib/components/common/Text.svelte";
 </script>
 
 
-<Container type="border">Categories</Container>
+<Card type="border" style="grid-area: categories">
+  <Text>Categories</Text>
+</Card>
+
+<!-- <Card type="border">
+  <Text>Categories</Text>
+</Card> -->

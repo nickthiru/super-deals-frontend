@@ -20,10 +20,6 @@
     margin-block: 20px;
   }
 
-  .border {
-    border: 1px solid black;
-  }
-
   /* @media (width >= 90rem) {
     .app {
       max-width: 960px;

@@ -1,16 +1,13 @@
 <script>
-  import Container from "$lib/components/common/Container.svelte";
+  import Card from "$lib/components/common/Card.svelte";
   import Text from "$lib/components/common/Text.svelte";
 </script>
 
 
-<Container type="border">
+<Card type="border" style="grid-area: featured-deals">
   <Text>Featured Deals</Text>
-</Container>
+</Card>
 
-
-<style>
-  /* div {
-    display: flex;
-  } */
-</style>
+<!-- <Card type="border">
+  <Text>Featured Deals</Text>
+</Card> -->
