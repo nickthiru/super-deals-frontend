@@ -2,11 +2,6 @@
   export let type = "";
 </script>
 
-
-<!-- <div class={$$restProps.class}>
-  <slot />
-</div> -->
-
 <div class={type}>
   <slot />
 </div>

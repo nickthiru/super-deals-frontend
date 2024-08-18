@@ -1,9 +1,10 @@
 <script>
-  export let type = "";
+  export let type = "";  
+  export let id = "";
 </script>
 
 
-<p class={type}>
+<p {id} class={type}>
   <slot />
 </p>
 

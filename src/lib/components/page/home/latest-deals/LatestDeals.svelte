@@ -4,6 +4,6 @@
 </script>
 
 
-<Card type="border" style="grid-area: latest-deals">
+<Card type="border" styles="grid-area: latest-deals">
   <Text>Latest Deals</Text>
 </Card>

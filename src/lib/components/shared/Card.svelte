@@ -3,7 +3,7 @@
 </script>
 
 
-<div class={type} style={$$props.style}>
+<div class={type}>
   <slot />
 </div>
 

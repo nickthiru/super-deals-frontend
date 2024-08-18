@@ -4,10 +4,10 @@
 </script>
 
 
-<Card type="border" style="grid-area: categories">
-  <Text>Categories</Text>
+<Card type="border" styles="grid-area: featured-deals">
+  <Text>Featured Deals</Text>
 </Card>
 
 <!-- <Card type="border">
-  <Text>Categories</Text>
+  <Text>Featured Deals</Text>
 </Card> -->

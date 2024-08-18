@@ -1,8 +1,9 @@
 <script>
+  export let type = "";
 </script>
 
 
-<button class={$$restProps.class}>
+<button class={type}>
   <slot />
 </button>
 

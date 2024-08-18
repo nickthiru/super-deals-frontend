@@ -1,8 +1,11 @@
 <script>
   export let type = "";
+  export let url = "#";
 </script>
 
-<a href="/" class={type}><slot /></a>
+<a href={url} class={type}>
+  <slot />
+</a>
 
 <style>
   a {
