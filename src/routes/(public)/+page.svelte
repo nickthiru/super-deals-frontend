@@ -1,10 +1,9 @@
 <script>
-  import Container from "$lib/components/common/Container.svelte";
-  import Grid from "$lib/components/common/Grid.svelte";
+  import Container from "$lib/components/shared/Container.svelte";
   import Title from "$lib/components/page/home/Title.svelte";
-  import FeaturedDeals from "$lib/components/page/home/FeaturedDeals.svelte";
-  import Categories from "$lib/components/page/home/Categories.svelte";
-  import LatestDeals from "$lib/components/page/home/LatestDeals.svelte";
+  import FeaturedDeals from "$lib/components/page/home/featured-deals/FeaturedDeals.svelte";
+  import Categories from "$lib/components/page/home/categories/Categories.svelte";
+  import LatestDeals from "$lib/components/page/home/latest-deals/LatestDeals.svelte";
 
   /** @type {import('./$types').PageData} */
   export let data;
@@ -12,16 +11,24 @@
 
 
 <Container type="app">
-  <Grid type="home-page">
+  <div class="grid--pg">
     <Title/>
     <FeaturedDeals />
     <Categories />
     <LatestDeals />
-  </Grid>
+  </div>
 </Container>
 
-<!-- <IconAccountBox />
-<h1>Welcome to the Landing Page</h1> -->
 
-<!-- <Button>Test</Button>
-<Button class="outline">Testing</Button> -->
+<style>
+  .grid--pg {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "title"
+    "featured-deals"
+    "categories"
+    "latest-deals";
+    gap: 10px;
+  }
+</style>
