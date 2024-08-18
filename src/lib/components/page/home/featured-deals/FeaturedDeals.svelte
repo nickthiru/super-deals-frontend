@@ -1,13 +1,14 @@
 <script>
-  import Card from "$lib/components/common/Card.svelte";
-  import Text from "$lib/components/common/Text.svelte";
+  import Card from "$lib/components/shared/Card.svelte";
+  import Text from "$lib/components/shared/Text.svelte";
 </script>
 
 
-<Card type="border" styles="grid-area: featured-deals">
-  <Text>Featured Deals</Text>
-</Card>
-
-<!-- <Card type="border">
-  <Text>Featured Deals</Text>
-</Card> -->
+<section 
+  aria-labelledby="featured-deals" 
+  style:grid-area="featured-deals"
+>
+  <Card type="border">
+    <Text id="featured-deals">Featured Deals</Text>
+  </Card>
+</section>

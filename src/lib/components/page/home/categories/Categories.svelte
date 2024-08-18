@@ -1,6 +1,6 @@
 <script>
-  import Card from "$lib/components/common/Card.svelte";
-  import Text from "$lib/components/common/Text.svelte";
+  import Card from "$lib/components/shared/Card.svelte";
+  import Text from "$lib/components/shared/Text.svelte";
 </script>
 
 
