@@ -1,9 +1,7 @@
 <script>
-  // import Button from "$lib/components/Button.svelte";
-  import IconAccountBox from "~icons/mdi/account-box";
   import Container from "$lib/components/common/Container.svelte";
-  import Heading from "$lib/components/common/Heading.svelte";
   import Grid from "$lib/components/common/Grid.svelte";
+  import Title from "$lib/components/page/home/Title.svelte";
   import FeaturedDeals from "$lib/components/page/home/FeaturedDeals.svelte";
   import Categories from "$lib/components/page/home/Categories.svelte";
   import LatestDeals from "$lib/components/page/home/LatestDeals.svelte";
@@ -14,9 +12,8 @@
 
 
 <Container type="app">
-  <Heading level="1" type="lg">Big Time Deals</Heading>
-  <IconAccountBox />
   <Grid type="home-page">
+    <Title/>
     <FeaturedDeals />
     <Categories />
     <LatestDeals />
