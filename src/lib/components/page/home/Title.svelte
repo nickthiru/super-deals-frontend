@@ -1,15 +1,14 @@
 <script>
-  import Heading from "$lib/components/common/Heading.svelte";
+  import Heading from "$lib/components/shared/Heading.svelte";
 </script>
 
 
-<Heading 
-  level="1" 
-  type="lg" 
-  style="grid-area: title;"
->
-  Big Time Deals
-</Heading>
+<div style:grid-area="title">
+  <Heading level="1" type="lg">
+    Big Time Deals
+  </Heading>
+</div>
+
 
 <!-- <Heading 
   level="1" 
