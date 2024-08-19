@@ -1,12 +1,15 @@
 <script>
+  import { setContext } from "svelte";
   import Container from "$lib/components/shared/Container.svelte";
-  import Title from "$lib/components/page/home/Title.svelte";
+  import Title from "$lib/components/page/home/PageTitle.svelte";
   import FeaturedDeals from "$lib/components/page/home/featured-deals/FeaturedDeals.svelte";
   import Categories from "$lib/components/page/home/categories/Categories.svelte";
   import LatestDeals from "$lib/components/page/home/latest-deals/LatestDeals.svelte";
 
   /** @type {import('./$types').PageData} */
   export let data;
+
+  setContext("categories", data.categories);
 </script>
 
 
@@ -14,7 +17,7 @@
   <div class="grid--pg">
     <Title/>
     <FeaturedDeals />
-    <Categories />
+    <Categories/>
     <LatestDeals />
   </div>
 </Container>

@@ -1,9 +1,11 @@
 <script>
+  export let id = "";
+
   $: classes = $$props.class;
 </script>
 
 
-<p class={classes}>
+<p {id} class={classes}>
   <slot />
 </p>
 

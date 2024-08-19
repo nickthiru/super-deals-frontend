@@ -12,6 +12,8 @@
 
 <style>
   section {
+    padding: 15px;
+    margin-block: 5px;
     border: 1px solid black;
     position: relative;
   }
