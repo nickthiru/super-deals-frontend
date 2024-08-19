@@ -1,10 +1,10 @@
 <script>
-  export let section = "";
+  export let sectionName = "";
 </script>
 
 <section 
-  aria-labelledby={section} 
-  style:grid-area={section}
+  aria-labelledby={sectionName} 
+  style:grid-area={sectionName}
 >
   <slot />
 </section>
