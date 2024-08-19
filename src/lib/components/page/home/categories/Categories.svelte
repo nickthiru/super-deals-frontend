@@ -1,30 +1,16 @@
 <script>
-  import Text from "$lib/components/shared/Text.svelte";
-  import Section from "../Section.svelte";
-
+  import Section from "../shared/Section.svelte";
+  import Heading from "$lib/components/shared/Heading.svelte";
   import { capitalize } from "$lib/util/capitalize";
 
-  let section = "categories";
+  let sectionName = "categories";
 
-  $: capSection = capitalize(section, "-");
+  $: capSectionName = capitalize(sectionName, "-");
 </script>
 
 
-<!-- <section 
-  aria-labelledby="categories" 
-  style:grid-area="categories"
->
-  <Text id="categories">Categories</Text>
-</section>
-
-
-<style>
-  section {
-    border: 1px solid black;
-    position: relative
-  }
-</style> -->
-
-<Section {section}>
-  <Text id={section}>{capSection}</Text>
+<Section {sectionName}>
+  <Heading id={sectionName} level="2" class="sm">
+    {capSectionName}
+  </Heading>
 </Section>

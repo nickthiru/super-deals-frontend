@@ -1,9 +1,9 @@
 <script>
-  export let type = "";
+  $: classes = $$props.class;
 </script>
 
 
-<button class={type}>
+<button class={classes}>
   <slot />
 </button>
 
@@ -13,8 +13,8 @@
     border-radius: 3px;
     display: inline-block;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-6);
     padding: 13px 40px;
     border: 0;
     transition: background-color 200ms, color 200ms;

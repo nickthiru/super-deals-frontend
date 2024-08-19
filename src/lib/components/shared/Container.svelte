@@ -1,8 +1,8 @@
 <script>
-  export let type = "";
+  $: classes = $$props.class;
 </script>
 
-<div class={type}>
+<div class={classes}>
   <slot />
 </div>
 

@@ -7,17 +7,17 @@
 <slot />
 
 <nav>
-  <Link type="nav">
-    <Text type="sm">Home</Text>
+  <Link class="nav">
+    <Text class="sm">Home</Text>
   </Link>
-  <Link type="nav">
-    <Text type="sm">Brands</Text>
+  <Link class="nav">
+    <Text class="sm">Brands</Text>
   </Link>
-  <Link type="nav">
-    <Text type="sm">Editor's Choice</Text>
+  <Link class="nav">
+    <Text class="sm">Editor's Choice</Text>
   </Link>
-  <Link type="nav">
-    <Text type="sm">Settings</Text>
+  <Link class="nav">
+    <Text class="sm">Settings</Text>
   </Link>
 </nav>
 
@@ -26,6 +26,8 @@
   nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* justify-items: center;
+    align-items: center; */
     position: fixed;
     bottom: 0;
 

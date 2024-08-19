@@ -1,15 +1,16 @@
 <script>
-  export let type = "";
   export let url = "#";
+
+  $: classes = $$props.class;
 </script>
 
-<a href={url} class={type}>
+<a href={url} class={classes}>
   <slot />
 </a>
 
 <style>
   a {
-    color: black;
+    color: var(--gray-12);
     text-decoration: none;
     text-align: center;
   }

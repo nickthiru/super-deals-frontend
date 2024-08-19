@@ -4,7 +4,7 @@
 
 
 <div style:grid-area="title">
-  <Heading level="1" type="lg">
+  <Heading level="1" class="lg center">
     Big Time Deals
   </Heading>
 </div>

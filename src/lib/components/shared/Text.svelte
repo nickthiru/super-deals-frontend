@@ -1,10 +1,9 @@
 <script>
-  export let type = "";  
-  export let id = "";
+  $: classes = $$props.class;
 </script>
 
 
-<p {id} class={type}>
+<p class={classes}>
   <slot />
 </p>
 
@@ -12,24 +11,23 @@
 <style>
 p {
   font-family: var(--font-rounded-sans);
-  font-size: 1rem;
-  /* font-weight: 400; */
-  line-height: 150%;
-  letter-spacing: 0px;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  line-height: var(--font-lineheight-2);
+  letter-spacing: var(--font-letterspacing-1);
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: var(--font-weight-7);
 }
 
 .lg {
-  font-size: 1.25rem;
-  font-weight: 600;
-  line-height: 100%;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-6);
+  line-height: var(--font-lineheight-3);
 }
 
 .sm {
-  font-size: 0.85rem;
+  font-size: var(--font-size-0);
 }
-
 </style>

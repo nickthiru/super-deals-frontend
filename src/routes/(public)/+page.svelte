@@ -10,7 +10,7 @@
 </script>
 
 
-<Container type="app">
+<Container class="app">
   <div class="grid--pg">
     <Title/>
     <FeaturedDeals />
