@@ -2,13 +2,12 @@
   import Heading from "$lib/components/shared/Heading.svelte";
   
   export let id = "";
-  // export let capSectionName = "";
 </script>
 
 
 <Heading 
   {id} 
-  level="2" 
+  level="h2" 
   class="sm"
   style="
     position: absolute;

@@ -2,24 +2,17 @@
   export let level = "";
   export let id = "";
   export let style = "";
-
-  $: classes = $$props.class;
 </script>
 
 
-{#if level === "1"}
-	<h1 {id} class={classes} {style}>
-    <slot />
-  </h1>
-{:else if level === "2"}
-  <h2 {id} class={classes} {style}>
-    <slot />
-  </h2>
-{:else if level === "3"}
-  <h3 {id} class={classes} {style}>
-    <slot />
-  </h3>
-{/if}
+<svelte:element 
+  this={level}
+  {id}
+  class={$$props.class}
+  {style}
+>
+  <slot />
+</svelte:element>
 
 
 <style>
