@@ -14,7 +14,7 @@
 
 
 <Container class="app">
-  <div class="grid--pg">
+  <div class="grid">
     <PageTitle/>
     <FeaturedDeals />
     <Categories/>
@@ -24,7 +24,7 @@
 
 
 <style>
-  .grid--pg {
+  .grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
