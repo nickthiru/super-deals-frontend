@@ -1,10 +1,8 @@
 <script>
   export let url = "#";
-
-  $: classes = $$props.class;
 </script>
 
-<a href={url} class={classes}>
+<a href={url} class={$$props.class}>
   <slot />
 </a>
 

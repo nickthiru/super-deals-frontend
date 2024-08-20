@@ -1,9 +1,4 @@
-<script>
-  $: classes = $$props.class;
-</script>
-
-
-<button class={classes}>
+<button class={$$props.class}>
   <slot />
 </button>
 

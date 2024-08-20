@@ -1,9 +1,4 @@
-<script>
-  $: classes = $$props.class;
-</script>
-
-
-<div class={classes}>
+<div class={$$props.class}>
   <slot />
 </div>
 
