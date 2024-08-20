@@ -24,12 +24,6 @@
 
 
 <style>
-  iconify-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-  }
-
   .categories-item {
     display: flex;
     flex-direction: column;

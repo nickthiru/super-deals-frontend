@@ -75,3 +75,10 @@ h6 {
     --min-tap-height: 44px;
   }
 }
+
+/* Iconify web components are not rendered instantly and might cause layout shifts. This is to avoid layout shifts. */
+iconify-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
