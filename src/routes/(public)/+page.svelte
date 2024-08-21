@@ -4,7 +4,6 @@
   import FeaturedDeals from "$lib/components/page/home/featured-deals/FeaturedDeals.svelte";
   import Categories from "$lib/components/page/home/categories/Categories.svelte";
   import LatestDeals from "$lib/components/page/home/latest-deals/LatestDeals.svelte";
-  import PageTitle from "$lib/components/page/home/PageTitle.svelte";
 
   /** @type {import('./$types').PageData} */
   export let data;
@@ -15,7 +14,6 @@
 
 <Container class="app">
   <div class="grid">
-    <PageTitle/>
     <FeaturedDeals />
     <Categories/>
     <LatestDeals />
@@ -26,9 +24,8 @@
 <style>
   .grid {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: 
-    "title"
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
     "featured-deals"
     "categories"
     "latest-deals";
