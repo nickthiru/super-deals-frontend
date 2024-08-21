@@ -29,6 +29,6 @@
     "featured-deals"
     "categories"
     "latest-deals";
-    gap: 10px;
+    gap: 20px;
   }
 </style>
