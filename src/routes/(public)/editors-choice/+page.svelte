@@ -2,8 +2,9 @@
   export let data;
   // console.log("data: " + JSON.stringify(data, null, 2));
 
-  const products = data.products;
+  // const products = data.products;
   // console.log("products: " + JSON.stringify(products, null, 2));
 </script>
 
-<h1>Public products listing page</h1>
+
+<p>/editors-choice/+page.svelte</p>
