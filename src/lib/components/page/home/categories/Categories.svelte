@@ -1,7 +1,7 @@
 <script>
-  import Section from "../shared/Section.svelte";
+  import Section from "$lib/components/shared/Section.svelte";
+  import SectionTitle from "$lib/components/shared/SectionTitle.svelte";
   import CategoriesItems from "./CategoriesItems.svelte";
-  import SectionTitle from "../shared/SectionTitle.svelte";
   import { capitalize } from "$lib/util/capitalize";
 
 
