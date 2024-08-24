@@ -1,6 +1,5 @@
 <script>
   import { setContext } from "svelte";
-  import Container from "$lib/components/shared/Container.svelte";
   import FeaturedDeals from "$lib/components/page/home/featured-deals/FeaturedDeals.svelte";
   import Categories from "$lib/components/page/home/categories/Categories.svelte";
   import LatestDeals from "$lib/components/page/home/latest-deals/LatestDeals.svelte";
@@ -12,13 +11,11 @@
 </script>
 
 
-<Container class="app">
-  <div class="grid">
-    <FeaturedDeals />
-    <Categories/>
-    <LatestDeals />
-  </div>
-</Container>
+<div class="grid">
+  <FeaturedDeals />
+  <Categories/>
+  <LatestDeals />
+</div>
 
 
 <style>
