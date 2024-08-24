@@ -1,11 +1,20 @@
 <script>
+  import SectionTitle from "$lib/components/shared/SectionTitle.svelte";
+  import { capitalize } from "$lib/util/capitalize";
+
   export let sectionName = "";
+
+  $: capSectionName = capitalize(sectionName, "-");
 </script>
 
 <section 
   aria-labelledby={sectionName} 
   style:grid-area={sectionName}
 >
+  <SectionTitle id={sectionName}>
+    {capSectionName}
+  </SectionTitle>
+
   <slot />
 </section>
 
