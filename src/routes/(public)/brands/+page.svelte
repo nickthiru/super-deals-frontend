@@ -1,10 +1,19 @@
 <script>
-  export let data;
-  // console.log("data: " + JSON.stringify(data, null, 2));
+  import CardBrandsList from "$lib/components/shared/card/CardBrandsList.svelte";
+  import Section from "$lib/components/shared/Section.svelte";
 
-  // const products = data.products;
+  export let data;
+  console.log("data: " + JSON.stringify(data, null, 2));
+
+  const brands = data.brands;
   // console.log("products: " + JSON.stringify(products, null, 2));
+
+  let sectionName = "brands";
 </script>
 
 
-<p>/brands/+page.svelte</p>
+<Section {sectionName}>
+  {#each brands as brand}
+    <CardBrandsList {brand} />
+  {/each}
+</Section>

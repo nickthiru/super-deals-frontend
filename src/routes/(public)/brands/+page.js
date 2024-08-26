@@ -1,3 +1,5 @@
+import { brands } from '$lib/data/brands.js';
+
 export async function load({ fetch }) {
 
   // const res = await fetch("/api/products");
@@ -9,4 +11,8 @@ export async function load({ fetch }) {
   // return {
   //   products: result,
   // };
+
+  return {
+    brands,
+  };
 }
