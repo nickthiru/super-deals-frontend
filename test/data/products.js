@@ -68,5 +68,40 @@ export const products = [
       { user: "Jack", comment: "Great for long runs.", rating: 4 }
     ],
     imageUrl: "https://example.com/images/runningshoes.jpg"
+  },
+  {
+    PK: "MERCHANT#<MerchantId>",
+    SK: "MERCHANT#<MerchantId>",
+    Id: 123,
+    Title: "Bicycle 123",
+    Description: "123 description",
+    BicycleType: "Hybrid",
+    Brand: "Brand-Company C",
+    Price: 500,
+    Color: ["Red", "Black"],
+    ProductCategory: "Bicycle",
+    InStock: true,
+    QuantityOnHand: null,
+    RelatedItems: [
+      341,
+      472,
+      649
+    ],
+    Pictures: {
+      FrontView: "http://example.com/products/123_front.jpg",
+      RearView: "http://example.com/products/123_rear.jpg",
+      SideView: "http://example.com/products/123_left_side.jpg"
+    },
+    ProductReviews: {
+      FiveStar: [
+        "Excellent! Can't recommend it highly enough! Buy it!",
+        "Do yourself a favor and buy this."
+      ],
+      OneStar: [
+        "Terrible product! Do not buy this."
+      ]
+    },
+    Comment: "This product sells out quickly during the summer",
+    SafetyWarning: "Always wear a helmet"
   }
 ];
