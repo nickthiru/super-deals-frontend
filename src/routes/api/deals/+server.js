@@ -1,11 +1,13 @@
 import { json, text } from "@sveltejs/kit";
-import { products } from "$lib/data/products.js";
+import { deals } from "../../../../test/data/deals.js";
+
+
 
 export async function GET() {
   console.log("[+] Inside +server.js GET");
 
   // console.log("products: " + JSON.stringify(products, null, 2));
-  return json(products);
+  return json(deals);
 }
 
 export async function PUT({ request }) {
