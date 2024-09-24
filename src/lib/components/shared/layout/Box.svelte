@@ -1,18 +1,26 @@
-<div class="box {$$props.class}">
+<script>
+  export let invert = false;
+</script>
+
+<!-- <div class="box {$$props.class}">
+  <slot />
+</div> -->
+
+<div
+  class="box"
+  class:invert
+>
   <slot />
 </div>
 
-
 <style>
   .box {
+    padding: var(--p, var(--size-2));
+    border-width: var(--b, var(--border-size-2));
+    border-style: solid;
+    border-color: black;
     --color-light: var(--gray-0);
     --color-dark: var(--gray-12);
-    
-    padding: var(--p);
-    border-width: var(--b-size, var(--border-size-1));
-    border-style: var(--b-style, solid);
-    border-color: var(--b-color, black);
-    border-radius: var(--b-radius);
     color: var(--color-dark);
     background-color: var(--color-light);
   }

@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit';
-import { categories } from '$lib/data/categories';
+import { categories } from './categories';
 
 // /** @type {import('./$types').PageLoad} */
 // export function load({ params }) {
