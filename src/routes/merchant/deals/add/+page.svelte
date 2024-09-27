@@ -6,13 +6,18 @@
   <h1 id="add-deal-title">Add a Deal</h1>
 
 	<label>
-		Title
+		Deal Title
 		<input name="title" type="text">
 	</label>
 
 	<label>
-		Brand
-		<input name="brand" type="text">
+		Original Price
+		<input name="originalPrice" type="number">
+	</label>
+
+	<label>
+		Discount
+		<input name="discount" type="discount">
 	</label>
 
   <label>
@@ -32,14 +37,14 @@
 	</label>
 
   <label>
-		Price
-		<input name="price" type="text">
+		Logo
+		<input name="logo" type="file" accept=".jpg, .png, .svg">
 	</label>
 
-  <label>
-		Image
-		<input name="img" type="file" accept=".jpg, .png, .svg">
-	</label>
+	<!-- <label>
+		Expiration
+		<input name="discount" type="discount">
+	</label> -->
 
   <button type="submit">Add Deal</button>
 </form>
