@@ -10,8 +10,8 @@ export async function GET() {
   return json(deals);
 }
 
-export async function PUT({ request }) {
-  console.log("[+] Inside +server.js PUT");
+export async function POST({ request, fetch }) {
+  console.log("[+] Inside +server.js POST");
 
   const obj = await request.json();
   console.log("obj: " + JSON.stringify(obj, null, 2));
