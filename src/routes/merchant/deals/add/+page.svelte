@@ -1,8 +1,42 @@
 <script>
+// @ts-nocheck
+	import { enhance } from "$app/forms";
+	import * as R from "ramda";
+
+
+	function onFormSubmit({ formData }) {
+		console.log("Inside 'onFormSubmit()'");
+
+		const logoFile = formData.get("logo");
+
+		const reader = new FileReader();
+
+  	reader.onloadend = function() {
+			const logoFileInBase64 = reader.result;
+			console.log('logoFileInBase64: ' + logoFileInBase64);
+
+			const file = new File(
+				[Uint8Array.from(btoa(logoFileInBase64), (m) => m.codePointAt(0))],
+				'filename.png',
+				{ type: 'image/png' }
+			);
+
+			console.log(file);
+
+			formData.set("logoFileInBase64", logoFileInBase64);
+		}
+
+  	reader.readAsDataURL(logoFile);
+	}
 </script>
 
 
-<form method="POST" aria-labelledby="add-deal-title" enctype="multipart/form-data">
+<form 
+	method="POST" 
+	aria-labelledby="add-deal-title" 
+	enctype="multipart/form-data"
+	use:enhance={onFormSubmit}
+	>
   <h1 id="add-deal-title">Add a Deal</h1>
 
 	<label>
