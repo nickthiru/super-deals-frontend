@@ -4,57 +4,66 @@
 	import * as R from "ramda";
 
 
-	function onFormSubmit({ formData }) {
+	function onFormSubmit(event) {
 		console.log("Inside 'onFormSubmit()'");
+		// console.log("event: " + JSON.stringify(event, null, 2));
 
-		const logoFile = formData.get("logo");
+		const data = new FormDataEvent(event.currentTarget);
+		console.log("data: " + JSON.stringify(data, null, 2));
 
-		const reader = new FileReader();
 
-  	reader.onloadend = function() {
-			const logoFileInBase64 = reader.result;
-			console.log('logoFileInBase64: ' + logoFileInBase64);
+		// const reader = new FileReader();
 
-			const file = new File(
-				[Uint8Array.from(btoa(logoFileInBase64), (m) => m.codePointAt(0))],
-				'filename.png',
-				{ type: 'image/png' }
-			);
+  	// reader.onloadend = function() {
+		// 	const logoFileInBase64 = reader.result;
+		// 	console.log('logoFileInBase64: ' + logoFileInBase64);
+		// 	console.log('typeof logoFileInBase64: ' + typeof logoFileInBase64);
 
-			console.log(file);
+		// 	// const file = new File(
+		// 	// 	[Uint8Array.from(btoa(logoFileInBase64), (m) => m.codePointAt(0))],
+		// 	// 	'filename.png',
+		// 	// 	{ type: 'image/png' }
+		// 	// );
+		// 	// console.log("file: " + file);
+		// 	// console.log("file: " + JSON.stringify(file, null, 2));
+    // 	// console.log("file is empty: " + R.isEmpty(file));
 
-			formData.set("logoFileInBase64", logoFileInBase64);
-		}
+		// 	formData.set("logoFileInBase64", logoFileInBase64);
+		// }
 
-  	reader.readAsDataURL(logoFile);
+  	// reader.readAsDataURL(formData.get("logo"));
+
+		// const logo = formData.get("logo")
+		// console.log("Array.isArray(logo): " + Array.isArray(logo));
 	}
 </script>
 
 
 <form 
-	method="POST" 
+	method="POST"
 	aria-labelledby="add-deal-title" 
 	enctype="multipart/form-data"
-	use:enhance={onFormSubmit}
 	>
-  <h1 id="add-deal-title">Add a Deal</h1>
+  <!-- <h1 id="add-deal-title">Add a Deal</h1> -->
 
+	<!--<input type="hidden" name="merchantId" value="Nike">  This value is taken from when the merhant signs in and the http responses contains the merchantId (to be saved in a Svelte store) -->
+	
 	<label>
 		Deal Title
 		<input name="title" type="text">
 	</label>
 
-	<label>
+	<!-- <label>
 		Original Price
 		<input name="originalPrice" type="number">
-	</label>
+	</label> -->
 
-	<label>
+	<!-- <label>
 		Discount
 		<input name="discount" type="discount">
-	</label>
+	</label> -->
 
-  <label>
+  <!-- <label>
 		Category
 		<select name="category">
 			<option value="">Select a category</option>
@@ -68,7 +77,7 @@
 			<option value="entertainment">Entertainment</option>
 			<option value="travel">Travel</option>
 		</select>
-	</label>
+	</label> -->
 
   <label>
 		Logo
