@@ -13,8 +13,8 @@ export const actions = {
     // const merchantId = formData.get("merchantId");
     // console.log("merchantId: " + merchantId);
 
-    const title = formData.get("title");
-    console.log("title: " + title);
+    // const title = formData.get("title");
+    // console.log("title: " + title);
 
     // const originalPrice = formData.get("originalPrice");
     // console.log("originalPrice: " + originalPrice);
@@ -27,7 +27,7 @@ export const actions = {
     // console.log('typeof logoFileInBase64: ' + typeof logoFileInBase64);
     // console.log("logoFileInBase64 is empty: " + R.isEmpty(logoFileInBase64));
 
-    const logo = formData.get("logo");
+    // const logo = formData.get("logo");
     // console.log("logo: " + logo);
     // console.log('typeof logo: ' + typeof logo);
     // console.log("logo is empty: " + R.isEmpty(logo));
