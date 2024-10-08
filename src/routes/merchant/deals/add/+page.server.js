@@ -54,7 +54,7 @@ export const actions = {
       body: formData,
     });
 
-    // const result = await response.json();
-    // console.log("result: ", JSON.stringify(result, null, 2));
+    const result = await response.json();
+    console.log("result: ", JSON.stringify(result, null, 2));
   }
 };

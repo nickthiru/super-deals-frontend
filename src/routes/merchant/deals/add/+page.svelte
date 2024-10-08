@@ -44,10 +44,10 @@
 		<input name="logo" type="file" accept=".jpg, .png, .svg">
 	</label>
 
-	<!-- <label>
+	<label>
 		Expiration
-		<input name="discount" type="discount">
-	</label> -->
+		<input name="expiration" type="date">
+	</label>
 
   <button type="submit">Add Deal</button>
 </form>
