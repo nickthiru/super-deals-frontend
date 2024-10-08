@@ -6,7 +6,7 @@
 	enctype="multipart/form-data"
 	>
 	
-	<!--<input type="hidden" name="merchantId" value="Nike">  This value is taken from when the merhant signs in and the http responses contains the merchantId (to be saved in a Svelte store) -->
+	<input type="hidden" name="merchantId" value="Nike">  This value is taken from when the merhant signs in and the http responses contains the merchantId (to be saved in a Svelte store)
 	
 	<label>
 		Deal Title
